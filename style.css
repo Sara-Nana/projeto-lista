@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    background: #529497;
+    background-image: linear-gradient(to right, #4e8b8e, rgb(106, 69, 137));
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+main {
+    position: relative;
+}
+
+h1, h2 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.375);
+    padding: 20px;
+}
+
+input {
+    border: 2px solid rgb(0, 0, 0);
+    border-right: 1px solid black;
+    padding: 5px;
+    font-size: 15px;
+    width: 95%;
+}
+
+#add-task-form {
+    text-align: left;
+}
+
+#add-btn {
+    position: absolute;
+    background: #fff;
+    border: 2px solid black;
+    cursor: pointer;
+    padding-top: 2px;
+    font-size: 8px;
+}
+
+#add-btn:hover {
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+#task-list-container {
+    width: 100%;
+}
+
+.task-box {
+    text-align: left;
+    line-height: 25px;
+    font-size: 15px;
+    color: #000000;
+    padding: 4px 4px 4px 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+ul .material-symbols-outlined {
+    position: absolute;
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    font-size: 22px
+}
+
+#cancel {
+    right: 0px;
+}
+
+#check_circle {
+    right: 30px;
+}
+
+#cancel:hover {
+    color: rgb(209, 3, 3);
+    transform: scale(1.2);
+}
+
+#check_circle:hover {
+    color: rgb(10, 144, 10);
+    transform: scale(1.2);
+}
+
+.hide {
+    display: none;
+}
+
+.done {
+    background-color: rgb(74 80 115);
+    color: #fff;
+    text-decoration: line-through;
+}
